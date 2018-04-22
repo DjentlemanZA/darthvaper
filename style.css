@@ -55,11 +55,21 @@ hr {
 
 
 #slideshow {
-    height: 400px;
-    max-height: 400px;
+    height: 50px;
+    max-height: 50px;
     
 }
 
-#pic1 {
-    height: 100%;
+
+.pos-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    position: relative;
+    top: 20px;
+
 }
+
+
