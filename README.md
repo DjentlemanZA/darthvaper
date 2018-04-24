@@ -1,8 +1,14 @@
 # darthvaper
 Vape Lounge
 
-Josh - - - - - - - - - - - Torsten 
-Landing                    Home 
-About                      Contact
-Products                   Sign up/Login (Pop-up)
+Josh - - - - - - - - - - -  <br>
+Landing                    
+About                      
+Products                   
 Social Media
+<br>
+Torsten ------- <br>
+Home 
+Contact
+Sign up/Login (Pop-up)
+<br>
