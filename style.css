@@ -60,6 +60,28 @@ hr {
     
 }
 
+#about-container {
+    background-color: rgba(0,0,0,0.75);
+    height: 93%;
+    padding: 10% 8%;
+    text-align: justify;
+}
+
+#about-container h3, h1 {
+    text-align: center;
+    font-family: Lobster, sans-serif;
+}
+
+#about-container h5 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+#about-content {
+    margin-top: 3%;
+    font-family: Lato, sans-serif;
+}
+
 
 /*.pos-center{
     display: block;
