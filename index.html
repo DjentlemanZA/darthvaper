@@ -1,12 +1,10 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <link rel='stylesheet' type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    
 <title>Darth Vaper - Home</title>
     
 </head>
@@ -47,9 +45,37 @@
     <ul class="navbar-nav my-2">
       <li class="nav-item">
         <a class="nav-link" href="#">Sign Up <i class="fas fa-user-plus"></i></a>
+
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login <i class="fas fa-user"></i></a>
+        <!--<a class="nav-link" href="#" id="myBtn">Login <i class="fas fa-user"></i></a>-->
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login <i class="fas fa-user"></i></button>
+
+          <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </form>
+            </div>
       </li>
     </ul>
   </div>
@@ -138,8 +164,12 @@
     </div>  
     
 </div>
+
+
     
 <!-- Scripts -->
+    <!--Script for making carousel cycle through slides-->
+
 <script>
     onload  = start;
 
@@ -152,14 +182,30 @@
         setInterval(Move,3000); //change img in 3 sec
     }
 </script>
+    <!--Script for popup login-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+    <!-- -->
+
 <script type="text/javascript" src="javascript.js"></script>
-<!--<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>    
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>-->
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+
+
+
 </body>
 
 
