@@ -60,6 +60,8 @@ hr {
     
 }
 
+/* ABOUT PAGE */
+
 #about-container {
     background-color: rgba(0,0,0,0.75);
     height: 93%;
@@ -81,6 +83,17 @@ hr {
     margin-top: 3%;
     font-family: Lato, sans-serif;
 }
+
+#about-links {
+
+    padding-left: 17%;
+    height: 10%;
+}
+
+#about-buttons {
+    width: 13%;
+}
+
 
 
 /*.pos-center{
@@ -241,7 +254,7 @@ body, html {
 
 /*nav bar*/
 
-/*body {margin:0;}
+body {margin:0;}
 
 .navbar {
   overflow: hidden;
@@ -269,4 +282,4 @@ body, html {
   padding: 16px;
   margin-top: 30px;
   height: 1500px;  Used in this example to enable scrolling
-}*/
+}
