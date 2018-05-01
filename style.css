@@ -20,12 +20,19 @@ h1 {
     font-size: 5em;
 }
 
+
+/* LANDING PAGE */
+
 #landing-content {
     text-align: center;
     padding-top: 35%;
     text-shadow: 0px 4px 3px rgba(0,0,255,0.4),
                  0px 8px 13px rgba(255,0,255,0.6),
                  0px 16px 23px rgba(0,255,200,0.2);
+}
+
+#landing-button {
+	width: 50%;
 }
 
 #home-content {
@@ -112,7 +119,7 @@ body, html {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: 'Just Another Hand', cursive;
+  font-family: 'Lato', cursive;
   overflow-X: hidden; }
 
 .cContainer {
@@ -272,7 +279,7 @@ body {margin:0;}
 	/* position: fixed; */
   background-color: #333;
   z-index: 10;
-  top: 0;
+  top: 0px;
   width: 100%;
 	height: 10%;
 	overflow: hidden;
@@ -281,10 +288,10 @@ body {margin:0;}
 
 .navbar a {
   float: left;
-  display: block;
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 30px 10px;
+  padding: 5px 10px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -317,10 +324,10 @@ button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 120% 50px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 25%;
 }
 
 button:hover {
