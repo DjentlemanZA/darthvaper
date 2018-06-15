@@ -6,81 +6,48 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<title>Darth Vaper - Landing</title>
+
 </head>
 <body>
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container">
-  <a class="navbar-brand" href="#" style="font-family: Lobster">Darth Vaper</a>
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar-about" style="font-family: Lobster">
+	<div class="container" id="navbar-main">
+  <a class="navbar-brand" href="landing.html" style="font-family: Lobster">Darth Vaper</a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Products
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Vapes</a>
+          <a class="dropdown-item" href="#">Juices</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Accessories</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
     </ul>
-    <ul class="navbar-nav my-2">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up <i class="fas fa-user-plus"></i></a>
-      </li>
-      <li class="nav-item">
-        <button onclick="document.getElementById('id01').style.display='block'" class="nav-link" style="width:auto;">Login <i class="fas fa-user"></i></button>
 
-          <div id="id01" class="modal">
+		<!-- LOGIN/SIGN UP -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login <i class="fas fa-user"></i></button>
 
-            <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-            </form>
-            </div>
-
-      </li>
-    </ul>
   </div>
-</div>
+	</div>
 </nav>
-
 
 <!-- CONTENT -->
 <div class="container">

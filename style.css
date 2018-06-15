@@ -1,3 +1,5 @@
+/* Document */
+
 html { 
     height: 100%;
 }
@@ -19,6 +21,34 @@ h1 {
     font-weight: 700;
     font-size: 5em;
 }
+
+
+/*NAV BAR*/
+
+.navbar {
+	position: fixed;
+	width: 100%;
+}
+
+#navbar-id {
+	color: white;
+
+}
+
+#navbar-about {
+	z-index: 10;
+	background-color: rgba(0,0,0,0.2);
+}
+
+
+section {
+  width: 40em;
+  height: 25em;
+  margin: 0 auto;
+  position: relative;
+}
+
+
 
 
 /* LANDING PAGE */
@@ -103,8 +133,6 @@ hr {
 #about-buttons {
     width: 25%;
 }
-
-
 
 
 
@@ -259,33 +287,6 @@ hr {
       background-color: #f9f9f9;
   }
 
-/*NAV BAR*/
-
-.navbar {
-	position: fixed;
-	width: 100%;
-}
-
-#navbar-main {
-	color: white;
-
-}
-
-#navbar-about {
-	z-index: 10;
-	background-color: rgba(0,0,0,0.2);
-}
-
-
-section {
-  width: 40em;
-  height: 25em;
-  margin: 0 auto;
-  position: relative;
-}
-
-
-
 
 
 .items {
@@ -431,4 +432,34 @@ span.psw {
        width: 100%;
     }
 >>>>>>> origin/master
+}
+
+/* @@@@@ PRODUCTS PAGE @@@@@ */
+
+#products-thumbs {
+
+	height: 200px;
+	width: 100%;
+
+}
+
+#products-names {
+	height: 50px;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+	#products-thumbs {
+
+	height: 200px;
+	width: 75%;
+
+}
+
+#products-names {
+	height: 50px;
+	width: 100%;
+}
+
 }
