@@ -1,0 +1,34 @@
+@import "compass/css3";
+
+.list-inline {
+  text-align: center;
+
+  > li {
+    margin: 10px 5px;
+    padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .selected img {
+    opacity: 1;
+    border-radius: 15px;
+  }
+
+  img {
+    opacity: 0.5;
+    transition: all .5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.item > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Carousel</title>
+
+    <link rel='stylesheet' type="text/css" href="styles.scss">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="row" id="slider">
+    <div class="col-md-12">
+      <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="active item" data-slide-number="0">
+            <img src="http://placehold.it/1200x480&amp;text=1">
+          </div>
+          <div class="item" data-slide-number="1">
+            <img src="http://placehold.it/1200x480&amp;text=2">
+          </div>
+          <div class="item" data-slide-number="2">
+            <img src="http://placehold.it/1200x480&amp;text=3">
+          </div>
+          <div class="item" data-slide-number="3">
+            <img src="http://placehold.it/1200x480&amp;text=4">
+          </div>
+          <div class="item" data-slide-number="4">
+            <img src="http://placehold.it/1200x480&amp;text=5">
+          </div>
+          <div class="item" data-slide-number="5">
+            <img src="http://placehold.it/1200x480&amp;text=6">
+          </div>
+          <div class="item" data-slide-number="6">
+            <img src="http://placehold.it/1200x480&amp;text=7">
+          </div>
+          <div class="item" data-slide-number="7">
+            <img src="http://placehold.it/1200x480&amp;text=8">
+          </div>
+        </div>
+
+        <!-- Controls-->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" id="slider-thumbs">
+      <ul class="list-inline">
+        <li>
+          <a id="carousel-thumb-0" class="selected">
+            <img src="http://placehold.it/80x60&amp;text=1">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-1">
+            <img src="http://placehold.it/80x60&amp;text=2">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-2">
+            <img src="http://placehold.it/80x60&amp;text=3">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-3">
+            <img src="http://placehold.it/80x60&amp;text=4">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-4">
+            <img src="http://placehold.it/80x60&amp;text=5">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-5">
+            <img src="http://placehold.it/80x60&amp;text=6">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-6">
+            <img src="http://placehold.it/80x60&amp;text=7">
+          </a>
+        </li>
+        <li>
+          <a id="carousel-thumb-7">
+            <img src="http://placehold.it/80x60&amp;text=8">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+
+$('#myCarousel').carousel({
+	interval: 3500
+});
+
+// This event fires immediately when the slide instance method is invoked.
+$('#myCarousel').on('slide.bs.carousel', function (e) {
+    var id = $('.item.active').data('slide-number');
+
+  	// Added a statement to make sure the carousel loops correct
+		if(e.direction == 'right'){
+	    id = parseInt(id) - 1;
+      if(id == -1) id = 7;
+    } else{
+        id = parseInt(id) + 1;
+        if(id == $('[id^=carousel-thumb-]').length) id = 0;
+    }
+
+    $('[id^=carousel-thumb-]').removeClass('selected');
+    $('[id=carousel-thumb-' + id + ']').addClass('selected');
+});
+
+// Thumb control
+$('[id^=carousel-thumb-]').click( function(){
+  var id_selector = $(this).attr("id");
+  var id = id_selector.substr(id_selector.length -1);
+  id = parseInt(id);
+  $('#myCarousel').carousel(id);
+  $('[id^=carousel-thumb-]').removeClass('selected');
+  $(this).addClass('selected');
+});
+    </script>
+
+</body>
+</html>

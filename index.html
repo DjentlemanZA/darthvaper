@@ -4,6 +4,7 @@
 <link rel='stylesheet' type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<script src="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js"> </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Darth Vaper - Home</title>
@@ -50,16 +51,17 @@
 </nav>
 
 <!-- CONTENT -->
-<div class="jumbotron" id="home-content">
 
-    
-    <div class="row">
+
+
+
         
-			<section>
+<div class="jumbotron" id="home-content">
+    <section>
   <ul class="carousel">
     <li class="items main-pos" id="1"><p>1</p></li>
     <li class="items right-pos" id="2">
-      <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg"/>
+      <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
     </li>
     <li class="items back-pos" id="3">
       <img src="http://farm9.staticflickr.com/8337/8234711202_831b23a2b7.jpg"/>
@@ -80,17 +82,36 @@
 </span>
 </section>
 
-</div>
-
-        
-    </div>  
     
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
 
 
 
     
 <!-- Scripts -->
     <!--Script for making carousel cycle through slides-->
+    <script>
+          $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+
+    </script>
 
 <script>
     onload  = start;
