@@ -13,13 +13,8 @@ Contact
 Sign up/Login (Pop-up)
 <br>
 
-
-https://codepen.io/redfrost/pen/dbrgk
-https://codepen.io/dobladov/pen/kXAXJx
-https://codepen.io/JacobLett/pen/rdRBVa
-https://codepen.io/mortenhoffmanndoff/pen/WvQGbQ
+BEST ONE - 
 https://codepen.io/DaveOdden/pen/HziDg
-https://codepen.io/bcerwin/pen/gobjjP/
-https://codepen.io/midniteio/pen/pybXOY
-https://codepen.io/KimSarabia/pen/XEBjQB
-https://codepen.io/anon/pen/zajOGM
+PROBABLY EASIER (and can look good with just a couple style changes - 
+https://codepen.io/redfrost/pen/dbrgk
+
