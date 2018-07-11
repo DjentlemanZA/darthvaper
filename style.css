@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-position: center;
     font-family: 'Lato', sans-serif;
-    color: white;
+    color: black;
 
 		height: 100%;
 		width: 100%;
@@ -211,95 +211,58 @@ span {
 
 
 
-/*Login popup*/
-.modal-header,h4,.close {
-      background-color: #5cb85c;
-      color:white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: #f9f9f9;
-  }
+/*SIGN UP POP-UP*/
 
-
-
-.items {
-  position: absolute;
-}
-
-.main-pos {
-  margin-left: 2em !important;
-  z-index: 3000;
-  /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
-}
-
-.left-pos {
-  opacity: .3;
-  margin-left: -17em !important;
-  z-index: 1000;
-  -webkit-transform: scale(.75);
-  -moz-transform: scale(.75);
-  transform: scale(.75);
-}
-
-.back-pos {
-  margin-left: 2em !important;
-  opacity: .05;
-  -webkit-transform: scale(.5);
-  -moz-transform: scale(.5);
-  transform: scale(.5);
-}
-
-.right-pos {
-  opacity: .3;
-  margin-left:  21em !important;
-  z-index: 1000;
-  -webkit-transform: scale(.75);
-  -moz-transform: scale(.75);
-  transform: scale(.75);
-}
-
-
-
+* {box-sizing: border-box}
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 15px;
+    margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
 }
 
 /* Set a style for all buttons */
-.button {
+button {
+    background-color: #4CAF50;
     color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
     cursor: pointer;
-    
+    width: 100%;
+    opacity: 0.9;
 }
 
-
-
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
+button:hover {
+    opacity:1;
 }
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
+/* Extra styles for the cancel button */
+.cancelbtn {
+		margin-right: 50%;
+    padding: 14px 20px;
+    background-color: #f44336;
 }
 
-.container {
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 25%;
+}
+
+/* Add padding to container elements */
+#signupContainer {
     padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
+		width: 50%;
 }
 
 /* The Modal (background) */
@@ -307,14 +270,18 @@ span.psw {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 10%;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 85%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    background-color: rgb(0,0,0, 0.0);
+    padding-top: 50px;
+		color: black;
+}
+
+.modal h1 {
+		color: black;
 }
 
 /* Modal Content/Box */
@@ -322,52 +289,47 @@ span.psw {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
 
 /* The Close Button (x) */
 .close {
     position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
+    left: 80%;
+    top: 10%;
+    font-size: 40px;
     font-weight: bold;
+    color: #f1f1f1;
+		z-index: 6;
 }
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: #f44336;
     cursor: pointer;
 }
 
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
+/* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
+    .cancelbtn, .signupbtn {
        width: 100%;
     }
->>>>>>> origin/master
 }
+
+
 
 /* @@@@@ PRODUCTS PAGE @@@@@ */
 
@@ -413,7 +375,7 @@ span.psw {
 }
 
 #products-content h3 {
-	text-shadow: 2px 2px 4px rgb(200,0,0, 0.9);
+	text-shadow: 2px 2px 4px rgb(200,0,0, 0.7);
 	font-family: Lobster, sans-serif;
 }
 
@@ -422,7 +384,6 @@ span.psw {
 	font-size: 1.2em;
 }
 
-#products-con
 
 
 @media screen and (max-width: 800px) {
