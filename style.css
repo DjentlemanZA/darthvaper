@@ -211,7 +211,7 @@ span {
 
 
 
-/*SIGN UP POP-UP*/
+/*LOGIN/SIGN UP POP-UP*/
 
 * {box-sizing: border-box}
 /* Full-width input fields */
@@ -231,18 +231,19 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 /* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
+#loginBtn {
+    background-color: rgb(0,220,255, 0.8);
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 1%;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+		font-family: Lato, sans-serif;
 }
 
-button:hover {
+#loginBtn:hover {
     opacity:1;
 }
 
@@ -256,7 +257,31 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   float: left;
-  width: 25%;
+  width: 50%;
+	margin-left: 25%;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+#loginButton2 {
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
 }
 
 /* Add padding to container elements */
@@ -271,12 +296,12 @@ button:hover {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0%;
-    top: 10%;
+    top: 5%;
     width: 100%; /* Full width */
     height: 85%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0, 0.0);
-    padding-top: 50px;
+		margin-top: 2%;
 		color: black;
 }
 
@@ -287,7 +312,7 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
 }
@@ -325,6 +350,17 @@ hr {
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
        width: 100%;
     }
 }
